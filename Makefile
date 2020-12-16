@@ -2,8 +2,8 @@ KERNELDIR=/lib/modules/`uname -r`/build
 
 
 #Change the names here to your file name
-MODULES = helloWorld.ko 
-obj-m += helloWorld.o 
+MODULES = kernelMod.ko 
+obj-m += kernelMod.o 
 
 all:
 	make -C $(KERNELDIR) M=$(PWD) modules
